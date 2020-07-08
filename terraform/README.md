@@ -12,7 +12,7 @@ an existing Terraform configuration. Alternatively, you may import the module
 directly from GitHub like follows:
 
     module "abridge_collector" {
-      source = "git::git@github.com:abridgeio/abridge-collector-role-creation.git//terraform"
+      source = "git::git@github.com:abridgeio/abridge-collector-aws.git//terraform"
       abridge_organization_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
     }
 
