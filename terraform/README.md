@@ -19,3 +19,7 @@ directly from GitHub like follows:
     output "abridge_collector_role_arn" {
       value = module.abridge_collector.abridge_collector_role_arn
     }
+
+
+After creating the role, you will need to add a new source to Abridge using
+the ARN for that role.
