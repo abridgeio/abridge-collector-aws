@@ -24,7 +24,7 @@ resource "aws_iam_role" "abridge_collector" {
 
 resource "aws_iam_policy_attachment" "abridge_collector_attach" {
   name       = "abridge-collector-policy-attachment"
-  roles      = ["${aws_iam_role.abridge_collector.name}"]
+  roles      = [aws_iam_role.abridge_collector.name]
   policy_arn = local.abridge_role_policy_arn
 }
 
